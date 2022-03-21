@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etiquetas y referencias</title>
+</head>
+<body>
+    <h1>Titulo 1</h1>
+    <h2>Titulo 2</h2>
+    <h3>Titulo 3</h3>
+    <h4>Titulo 4</h4>
+    <h5>Titulo 5</h5>
+    <h6>Titulo 6, el h6 es el último</h6><!--el h6 el el útimo título, no existe el h7-->
+    <p>Los Titulos con la etiqueta &lt;h&gt; se utilizan como encabezados y con orden de su importancia, nunca para aumentar el tamaño de la tipografía</p>
+        <hr><!--esta etiqueta crea una linea de separación-->
+        <h3>Separación con hr</h3>
+        <p>se crea una linea para separar textos o secciones</p>
+        <hr>
+        <h3>Etiqueta SPAN</h3>
+        <p>la etiqueta de &lt;span&gt; sirve para identificar textos y darle propiedades con css o redireccionar en ese punto</p>
+        <p>esta <span style="color: brown;">NOMBRE</span> tiene span</p>
+        <hr>
+        <h3>Como escribir html sin ser interpretado</h3>
+        <p>Las entidades de carácter son referencias a un carácter y se representa con la sintaxis &nombre;. Para mostrar el código html como texto utilizaremos éstas dos entidades de carácter: <br>
+        para mostrar una etiqueta html en texto se utilizan las entidades que equivalen a menor "<" y mayo ">" respectivamente. <br>
+    el signo menor es "&amp;lt;" y el signo mayor es "&amp;gt;" todo junto</p>
+    <!--el codigo &amp; se utiliza para representar el & así no se interpreta el código html y se puede mostrar como texto-->
+    <hr>
+    <h3>Etiqueta A, vinculos</h3>
+    <a href="#" target="_blank">etiqueta de vinculo</a>
+    <!--href se enlaza el un vínculo, target _blank permite abrir el vínculo en una nueva pestaña-->
+    <h3>Etiqueta img</h3>
+    <div style="background-color: black;">
+        <img src="img/logo.png" alt="logo">
+    </div>
+    <hr>
+    <h3>Etiqueta form</h3>
+    <form>
+        <p>los input de los form deben tener una etiqueta descriptiva, para eso se usa label</p>
+        <label for="nombre1">input tipo texto</label><!--la propiedad for permite que al hacer clir sobre el texto del label se marque automáticamente el puntero de imput que uno quiere remarcar. en for va "nombre1" y en el imput donde se quiere ir su id tiene que ser igual "nombre1"-->
+        <input id="nombre1" type="text" name="nombre" placeholder="coloque su nombre">
+        <!--la propiedad name es el nombre con el que se van a enviar los datos que se escriban en el imput, sería como el nombre de la variable-->
+        <!-- la propiedad de placeholder permite mostrar en los imput un texto atenuado como referencia a lo que el usuario debería ingresar-->
+        <br>
+        <label for="imput2">varios input diferentes</label><br>
+        <input type="checkbox">
+        <input type="button" value="boton">
+        <input type="password" name="pass" id="pass">
+        <input type="file" name="cargaArchivoEscritorio" id="carga">
+        <br>
+        <label for="textarea">Etiqueta de textarea</label><br>
+        <textarea name="comentario" id="comentario" cols="50" rows="5" placeholder="ingrese comentario"></textarea>
+    </form>
+    <h3>Envio de formulario</h3>
+    <form action="#" method="post"><!--el método post no muestra los datos en el url a diferencia del get-->
+        <!--para ver los datos se puede acceder al inspeccionador en el explorador y dirigirse a Network, luego header, ahí se pueden ver los datos enviados-->
+        <label for="nombre">Nombre</label><br>
+        <input type="text" name="nombre" id="nombre" placeholder="ingrese su nombre">
+        <br>
+        <label for="apellido">Apellido</label><br>
+        <input type="text" name="apellido" id="apellido" placeholder="ingrese su apellido">
+        <br>
+        <label for="comentario">comentario</label><br>
+        <textarea name="comentario" id="comentario" cols="30" rows="10" placeholder="ingrese su comentario"></textarea>
+        <br>
+        <input type="submit"/>
+    </form>
+    <hr>
+</body>
+</html>
