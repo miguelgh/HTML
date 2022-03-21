@@ -9,7 +9,7 @@
 <body>
     <h2>Listas ordenadas</h2>
     <h4>La lista debe ir desde la a hasta la d</h4>
-     <ol type="a"> 
+     <ol type="a"> <!--Con type "a" los elementos se ordenan alfabéticamente en vez de números-->
         <li>Elemento 1</li>
         <li>Elemento 2</li>  
         <li>Elemento 3</li>
@@ -17,7 +17,7 @@
     </ol>
 
     <h4>La lista debe ie desde la laetra g hasta la j</h4>
-    <ol type="a" start="7">
+    <ol type="a" start="7"><!-- con la propiedad start="7" la lista comienza con el número 7 en adelante, en este caso al estar ordenado alfabeticamente inicia con la letra G-->
        <li>Elemento 1</li>  
        <li>Elemento 2</li>  
        <li>Elemento 3</li>  
@@ -25,7 +25,7 @@
     </ol>
 
     <h4>La lista debe ir desde la laetra z hasta la w (descendente)</h4>
-    <ol start="26" type="a"  reversed>
+    <ol start="26" type="a"  reversed><!--con la propiedad reversed se lista de manera inversa-->
         <li>Elemento 1</li>
         <li>Elemento 2</li>
         <li>Elemento 3</li>
@@ -37,7 +37,14 @@
     <ol>
         <li>Elemento 1</li>  
         <li>Elemento 2</li>  
-        <li>Elemento 3</li>  
+        <li>Elemento 3</li>
+        <li>
+            <ol type="I"><!--anidado de listas-->
+                <li>Sub valor 1</li>
+                <li>Sub valor 2</li>
+                <li>Sub valor 3</li>
+            </ol>
+        </li>  
         <li>Elemento 4</li> 
      </ol>
       
